@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020206;
+    color: #FFFFFF;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    align-items: center;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.search-btn {
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.product {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
