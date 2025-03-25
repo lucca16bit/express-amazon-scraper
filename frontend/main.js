@@ -19,6 +19,10 @@ searchBtn.addEventListener('click', async () => {
         results.innerHTML = '';
 
         products.forEach(prod => {
+            if (prod.title === 'N/A' || prod.rating === 'N/A' || prod.reviews === 'N/A' || prod.imageUrl === 'N/A') {
+                return;
+            }
+
             const cards = document.createElement('div');
             cards.classList.add('card');
 
