@@ -23,6 +23,7 @@ body {
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
+    margin-bottom: 2em;
 }
 
 .search-input {
@@ -31,7 +32,6 @@ body {
     border: none;
     outline: none;
     font-size: 16px;
-    border-radius: 0;
 }
 
 .search-btn {
@@ -44,10 +44,50 @@ body {
 }
 
 .results {
-    margin-top: 20px;
+    margin: 0 auto;
+    width: 90%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    justify-content: center;
+    align-items: start;
 }
 
-.product {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+.card {
+    background-color: #1E1E1E; 
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.card-rating {
+    display: flex;
+    margin: 1em;
+    
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#reviews {
+    color: #2575fc;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 16px;
+    color: #FFFFFF;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #aaa;
 }
